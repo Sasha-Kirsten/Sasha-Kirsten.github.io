@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="description" content="Sen Lin's Portfolio" />
+    <meta name="author" content="Sen Lin" />
+    <title>Aleksander Kirsten</title>
+
+    <link rel="icon" href="images/AleksEmoji.png">
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/font-faces.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+
+
+<body>
+
+    <!--Main menu-->
+    <div class="menu">
+        <div class="container">
+            <div class="row">
+                <div class="menu__wrapper d-none d-lg-block col-md-12">
+                    <nav class="">
+                        <ul>
+                            <li><a href="#hello">About Me</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu__wrapper col-md-12 d-lg-none">
+                    <button type="button" class="menu__mobile-button">
+                        <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Main menu-->
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu d-lg-none">
+        <div class="container">
+            <div class="mobile-menu__close">
+                <span><i class="fa fa-close" aria-hidden="true"></i></span>
+            </div>
+            <nav class="mobile-menu__wrapper">
+                <ul>
+                    <li><a href="#hello">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Mobile menu -->
+
+    <!--Header-->
+    <header class="main-header">
+        <div class="container">
+            <div class="row personal-profile">
+                <div class="col-md-4 personal-profile__avatar">
+                    <img class="" src="images/AleksEmoji.png" alt="avatar">
+                </div>
+                <div class="col-md-8">
+                    <p class="personal-profile__name">Aleksander Kirsten</p>
+                    <p class="personal-profile__work">A Passionate Computer Science Student</p>
+                    <div class="personal-profile__contacts">
+                        <dl class="contact-list contact-list__opacity-titles">
+                            <dt>GitHub:</dt>
+                            <dd><a href="https://github.com/Sasha-Kirsten" target="_blank">Sasha Kirsten</a></dd>
+
+                            <dt>Email:</dt>
+                            <dd><a href="mailto:aleksanderkirsten@googlemail.com">aleksanderkirsten@googlemail.com</a></dd>
+
+                            <dt>Education:</dt>
+                            <dd>Goldsmiths, University of London</dd>
+
+                            <dt>Location:</dt>
+                            <dd>London, UK</dd>
+
+                            
+                        </dl>
+                    </div>
+                    <p class="personal-profile__social">
+                        <a href="https://github.com/Sasha-Kirsten" target="_blank"><i class="fa fa-github"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Header-->
+
+    <!--Hello-->
+    <section id="hello" class="container section">
+        <div class="row">
+            <div class="col-md-10">
+                <h2 id="hello_header" class="section__title" style="text-indent: 0px;">About Me</h2>
+                <p class="section__description">
+                    Hi, I am Aleksander Kirsten from Goldsmiths, University of London. I am currently in the last year of my degree in Computer Science. I have learned Computer Science for the last three years. You can check the projects I developed below.
+                </p>
+                <br>
+                <a href="files/CV(Original).pdf" target="_blank" class="section_btn site-btn"><span><i
+                    class="fa fa-download" aria-hidden="true"></i></span>Download CV</a>
+            </div>
+    </section>
+
+    <hr>
+
+    <!--Portfolio-->
+    <section id="portfolio" class="container section">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 id="portfolio_header" class="section__title" style="text-indent: -9999px;">Personal Projects</h2>
+            </div>
+        </div>
+        <div class="row portfolio-menu">
+            <div class="col-md-12">
+                <nav>
+                    <ul>
+                        <li><a href="#" data-portfolio-target-tag="all">all</a></li>
+                        <li><a href="#" data-portfolio-target-tag="Univeristy Projects">Univeristy Projects</a></li>
+                        <li><a href="#" data-portfolio-target-tag="Other Projects">Other Projects</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="portfolio-cards">
+
+            <!-- iOS Apps -->
+            <div class="row project-card"  data-portfolio-tag="Univeristy Projects">
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#ShotDiary">
+                    <img class="" src="./images/WordleGame.jpg" alt="project-img">
+                </div>
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">Wordle Game with GUI</h3>
+                    <p class="project-card__description">
+                                </p>
+                    <p class="keywords">Keywords:</p>
+                    <ul class="tags">
+                        <li>Java</li>
+                        <li>Java Swing</li>
+                    </ul>
+                    <a href="https://github.com/Sasha-Kirsten/JavaWordle" class="project-card__link">
+                        GitHub: Wordle Game with GUI</a>
+                </div>
+            </div>
+
+            <!-- <div class="row project-card"  data-portfolio-tag="Univeristy Projects">
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">Password Generator/Validator</h3>
+                    <p class="project-card__description">
+                                </p>
+                    <p class="keywords">Keywords:</p>
+                    <ul class="tags">
+                        <li>Java</li>
+                    </ul>
+                    <a href="https://github.com/Sasha-Kirsten/PasswordGeneratorValidator" class="project-card__link">
+                        Github: PasswordGeneratorValidator</a>
+                </div>
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Stocks">
+                    <img class="" src="./images/PasswordPicture.jpg" alt="project-img">
+                </div>
+            </div> -->
+
+            <!-- <div class="row project-card"  data-portfolio-tag="iOS Apps">
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Spotify">
+                    <img class="" src="./images/spotify_complete.jpg" alt="project-img">
+                </div>
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">Sudoku Solver</h3>
+                    <p class="project-card__description">
+                            </p>
+                    <p class="keywords">Keywords:</p>
+                    <ul class="tags">
+                        <li>UIKit</li>
+                        <li>OAuth</li>
+                        <li>Spotify API</li>
+                        <li>MVVM/Singleton</li>
+                        <li>AVPlayer</li>
+                        <li>UICollectionView</li>
+                        <li>SDWebImage</li>
+                    </ul>
+                    <a href="https://github.com/ForestLinSen/Sudoku_Solver" class="project-card__link">Github:
+                        Sudoku Solver</a>
+                </div>
+            </div> -->
+
+            <!-- <div class="row project-card"  data-portfolio-tag="iOS Apps">
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">File Reader and Huffman Code Generator</h3>
+                    <p class="project-card__description">
+                        Here I will write a comment about what this is.</p>
+                    <p class="keywords">Keywords:</p>
+                    <ul class="tags">
+                        <li>Java</li>
+                    </ul>
+                    <a href="https://github.com/Sasha-Kirsten/FileReaderANDHuffmanCodeGenerator" class="project-card__link">Github:
+                        File Reader and Huffman Code Generator</a>
+                </div>
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Instagram">
+                    <img class="" src="./images/DataCompressionPicture.jpg" alt="project-img">
+                </div>
+            </div> -->
+
+
+            <div class="row project-card"  data-portfolio-tag="Univeristy Projects">
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">My Personal Final Project of my Undergrad</h3>
+                    <p class="project-card__description">
+                        Here I will write a comment about what this is.</p>
+                    <p class="keywords">Keywords:</p>
+                    <ul class="tags">
+                        <li>Python</li>
+                    </ul>
+                    <a href="https://github.com/Sasha-Kirsten/Aleks-Code" class="project-card__link">My Personal Final Project of my Undergrad</a>
+                </div>
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Instagram">
+                    <img class="" src="./images/FinalComputingProject.jpg" alt="project-img">
+                </div>
+            </div>
+
+
+            <div class="row project-card"  data-portfolio-tag="Univeristy Projects">
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">My first Machine Learning Project</h3>
+                    <p class="project-card__description">
+                        Here I will write a comment about what this is.</p>
+                    <p class="keywords">Keywords:</p>
+                    <ul class="tags">
+                        <li>Jupyter Notebook</li>
+                        <li>SK-Learn</li>
+                        <li>Pandas</li>
+                        <li>Numpy</li>
+                    </ul>
+                    <a href="https://github.com/Sasha-Kirsten/MyRegressionMachineLearning" class="project-card__link">My Regression Machine Learning</a>
+                </div>
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Instagram">
+                    <img class="" src="./images/RegressionModel.jpg" alt="project-img">
+                </div>
+            </div>
+
+<!-- 
+            <div class="row project-card"  data-portfolio-tag="Other Projects">
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">Flight Booking System</h3>
+                    <p class="project-card__description">
+                        Here I will write a comment about what this is.</p>
+                    <p class="keywords">Keywords:</p>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                    </ul>
+                    <a href="https://github.com/Sasha-Kirsten/FlightBookingSystem" class="project-card__link">Github:Flight Booking System</a>
+                </div>
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Instagram">
+                    <img class="" src="./images/FlightBookingSystem.jpg" alt="project-img">
+                </div>
+            </div>  -->
+
+
+             <!-- <div class="row project-card"  data-portfolio-tag="iOS Apps">
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">Calculator with GUI</h3>
+                    <p class="project-card__description">
+                        Here I will write a comment about what this is.</p>
+                    <p class="keywords">Keywords:</p>
+                    <ul class="tags">
+                        <li>Python</li>
+                    </ul>
+                    <a href="https://github.com/Sasha-Kirsten/Calculator_GUI" class="project-card__link">Github: Calculator GUI</a>
+                </div>
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Instagram">
+                    <img class="" src="./images/calculator.jpg" alt="project-img">
+                </div>
+            </div> -->
+
+            <!-- <div class="row project-card"  data-portfolio-tag="iOS Apps">
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">Name of the Project</h3>
+                    <p class="project-card__description">
+                        Here I will write a comment abou what this is.</p>
+                    <p class="keywords">Keywords:</p>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                    </ul>
+                    <a href="https://github.com/Sasha-Kirsten/" class="project-card__link">Github:</a>
+                </div>
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Instagram">
+                    <img class="" src="./images/ins_complete.jpg" alt="project-img">
+                </div>
+            </div> -->
+
+
+
+            <!-- Other Projects -->
+             <div class="row project-card"  data-portfolio-tag="Other Projects">
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">Ping Pong Game</h3>
+                    <p class="project-card__description">
+                        Here I will write a comment about what this is.</p>
+                    <p class="keywords">Keywords:</p>
+                    <ul class="tags">
+                        <li>Python</li>
+                    </ul>
+                    <a href="https://github.com/Sasha-Kirsten/" class="project-card__link">Github: Ping Pong Game</a>
+                </div>
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Instagram">
+                    <img class="" src="./images/PingPongGame.jpg" alt="project-img">
+                </div>
+            </div>
+
+
+           <!-- <div class="row project-card"  data-portfolio-tag="Other Projects">
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">Name of the Project</h3>
+                    <p class="project-card__description">
+                        Here I will write a comment abou what this is.</p>
+                    <p class="keywords">Keywords:</p>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                    </ul>
+                    <a href="https://github.com/Sasha-Kirsten/" class="project-card__link">Github:</a>
+                </div>
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Instagram">
+                    <img class="" src="./images/ins_complete.jpg" alt="project-img">
+                </div>
+            </div> -->
+
+
+
+
+
+             <!-- <div class="row project-card"  data-portfolio-tag="Other Projects">
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">Name of the Project</h3>
+                    <p class="project-card__description">
+                        Here I will write a comment abou what this is.</p>
+                    <p class="keywords">Keywords:</p>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                    </ul>
+                    <a href="https://github.com/Sasha-Kirsten/" class="project-card__link">Github:</a>
+                </div>
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Instagram">
+                    <img class="" src="./images/ins_complete.jpg" alt="project-img">
+                </div>
+            </div> -->
+
+
+
+
+
+
+             <!-- <div class="row project-card"  data-portfolio-tag="Other Projects">
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">Name of the Project</h3>
+                    <p class="project-card__description">
+                        Here I will write a comment abou what this is.</p>
+                    <p class="keywords">Keywords:</p>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                    </ul>
+                    <a href="https://github.com/Sasha-Kirsten/" class="project-card__link">Github:</a>
+                </div>
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Instagram">
+                    <img class="" src="./images/ins_complete.jpg" alt="project-img">
+                </div>
+            </div> -->
+
+
+            
+
+
+    </section>
+    <!--Portfolio-->
+    <hr>
+
+        <!-- Portfolio Modal -->
+        <div class="modal fade portfolio-modal" id="ShotDiary" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <img class="" src="./images/ShotDiary _complete.jpg" alt="project-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade portfolio-modal" id="Stocks" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <img class="" src="./images/stock_complete.jpg" alt="project-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade portfolio-modal" id="Spotify" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <img class="" src="./images/spotify_complete.jpg" alt="project-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade portfolio-modal" id="Instagram" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <img class="" src="./images/ins_complete.jpg" alt="project-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade portfolio-modal" id="Finance" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <img class="" src="./images/finance.png" alt="project-img">
+                </div>
+            </div>
+        </div>
+
+
+
+    <!-- Footer -->
+    <!-- <div class="background">
+        <div class="section">
+            <div class="footer">
+                <p>Sen Lin</p>
+                <p class="personal-profile__social">
+                    <a href="https://github.com/Sasha-Kirsten" target="_blank"><i class="fa fa-github"></i></a>
+                </p>
+            </div>
+        </div>
+    </div> -->
+    <!-- Footer -->
+
+
+
+        <script src="js/min/jquery.waypoints.min.js"></script>
+        <script src="js/min/mbclicker.min.js"></script>
+
+        <script src="js/menu.js"></script>
+        <script src="js/section.js"></script>
+        <script src="js/portfolio-filter.js"></script>
+        <script src="js/mobile-menu.js"></script>
+        <script src="js/site-btn.js"></script>
+        <script src="js/github-calendar.js"></script>
+
+</body>
+
+</html>
