@@ -1,0 +1,16 @@
+# Jekyll configuration for GitHub Pages
+theme: jekyll-theme-primer
+title: Sasha Kirsten
+description: Personal website
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude unnecessary files from the build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
